@@ -7,7 +7,7 @@
     </head>
     <body>
         <!--<img src="./resources/banner.svg" width="100%" /> Only for github deployment-->
-        <svg width="100%" height="300px" viewBox="0 0 100% 300" xmlns="http://www.w3.org/2000/svg">
+        <svg width="100%" height="300px" xmlns="http://www.w3.org/2000/svg">
             <!-- Defining the gradient -->
             <defs>
               <linearGradient id="midnightGradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -23,7 +23,7 @@
             <g>
               <circle cx="100" cy="50" r="40" stroke-width="1" fill="#FFEBCD"></circle>
               
-              <!-- Draw craters -->
+              <!-- Draw moon craters -->
               <circle cx="80" cy="50" r="10" stroke-width="1" fill="#e5d3b8 "></circle>
               <circle cx="110" cy="50" r="5" stroke-width="1" fill="#e5d3b8 "></circle>
               <circle cx="115" cy="30" r="8" stroke-width="1" fill="#e5d3b8 "></circle>
@@ -32,24 +32,80 @@
               
               <animateMotion dur="6s" repeatCount="indefinite" path="M 1000,300 a150,150 0 1,0 -300,0"></animateMotion>
             </g>
-            <!-- Drawing the stars -->
+            <!-- Create the stars -->
             <polygon points="12.5,1.25 5,24.75 23.75,9.75 1.25,9.75 20,24.75" style="fill:white;stroke:none;stroke-width:1;" transform="translate(50, 50)"></polygon>
             <polygon points="12.5,1.25 5,24.75 23.75,9.75 1.25,9.75 20,24.75" style="fill:white;stroke:none;stroke-width:1;" transform="translate(70, 190)"></polygon>
             <polygon points="12.5,1.25 5,24.75 23.75,9.75 1.25,9.75 20,24.75" style="fill:white;stroke:none;stroke-width:1;" transform="translate(300, 200)"></polygon>
             <polygon points="12.5,1.25 5,24.75 23.75,9.75 1.25,9.75 20,24.75" style="fill:white;stroke:none;stroke-width:1;" transform="translate(450, 90)"></polygon>
             <polygon points="12.5,1.25 5,24.75 23.75,9.75 1.25,9.75 20,24.75" style="fill:white;stroke:none;stroke-width:1;" transform="translate(250, 150)"></polygon>
             <polygon points="12.5,1.25 5,24.75 23.75,9.75 1.25,9.75 20,24.75" style="fill:white;stroke:none;stroke-width:1;" transform="translate(1100, 90)"></polygon>
-            <polygon points="12.5,1.25 5,24.75 23.75,9.75 1.25,9.75 20,24.75" style="fill:white;stroke:none;stroke-width:1;" transform="translate(800, 100)"></polygon>
+            <polygon points="12.5,1.25 5,24.75 23.75,9.75 1.25,9.75 20,24.75" style="fill:white;stroke:none;stroke-width:1;" transform="translate(725, 100)"></polygon>
             <polygon points="12.5,1.25 5,24.75 23.75,9.75 1.25,9.75 20,24.75" style="fill:white;stroke:none;stroke-width:1;" transform="translate(950, 100)"></polygon>
             <polygon points="12.5,1.25 5,24.75 23.75,9.75 1.25,9.75 20,24.75" style="fill:white;stroke:none;stroke-width:1;" transform="translate(1300, 160)"></polygon>
             <polygon points="12.5,1.25 5,24.75 23.75,9.75 1.25,9.75 20,24.75" style="fill:white;stroke:none;stroke-width:1;" transform="translate(1350, 50)"></polygon>
             <polygon points="12.5,1.25 5,24.75 23.75,9.75 1.25,9.75 20,24.75" style="fill:white;stroke:none;stroke-width:1;" transform="translate(1550, 200)"></polygon>
             <polygon points="12.5,1.25 5,24.75 23.75,9.75 1.25,9.75 20,24.75" style="fill:white;stroke:none;stroke-width:1;" transform="translate(1750, 40)"></polygon>
 
-            <!-- Adding the text -->
+            <!-- Text -->
             <text x="50%" y="25%" text-anchor="middle" fill="white" font-size="24">CSC317-04 INTRO TO WEB SOFTWARE DEV</text>
           </svg>
 
-          <nav class="menue"></nav>
+          <nav class="menue">
+            <ul>
+                <a href="./index.html">Index page</a>
+                <a href="./views/two.html">Two page</a>
+                <a href="./views/three.html">Three page</a>
+            </ul>
+          </nav>
+          <h1>Assignment 5</h1>
+          <h2 class="css-question">How to Apply CSS to HTML</h2>
+          <p class="css-question">
+            There are three ways to apply CSS to HTML:<br>
+            1. Inline - by using the style attribute inside an HTML element<br>
+            <pre>
+                <code>
+                    &lt;p style="background-color:grey;"&gt; Hello World!&lt;/p&gt;
+                </code>
+            </pre>
+            2. Internal - by using a <code>&lt;style&gt;</code> element in the <code>&lt;head&gt;</code> section<br>
+            <pre>
+                <code>
+                    &lt;head&gt;
+                        &lt;style&gt;
+                            body {
+                                background-color: rgb(30, 30, 30);
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                </code>
+            </pre>
+            3. External - by using a <code>&lt;link&gt;</code> element in the <code>&lt;head&gt;</code> section to link to an external CSS file<br>
+            <pre>
+                <code>
+                    &lt;head&gt;
+                        &lt;link rel="stylesheet" href="path/to/your/styles.css"&gt;
+                    &lt;/head&gt;
+                </code>
+            </pre>
+          </p>
+          <h2 class="js-question">How to Use JavaScript in a Webpage</h2>
+          <p class="js-question">
+            To link an external JavaScript file you need to put a <code>&lt;script&gt;&lt;/script&gt;</code> element in the <code>&lt;head&gt;</code> section
+            <pre>
+                <code>
+                    &lt;script src="path/to/your/script.js"&gt;&lt;/script&gt;
+                </code>
+            </pre>
+            To write a to write JavaScript code within an html file the JavaScript code must be between <code>&lt;script&gt</code> element rather than providing a <code>src</code> attribute
+            <pre>
+                <code>
+                    &lt;script&gt;
+                        window.addEventListener("load", () =&gt; {
+                            console.log("This function is executed once the page is fully loaded");
+                        });
+                    &lt;/script&gt;
+                </code>
+            </pre>
+          </p>
     </body>
 </html>
