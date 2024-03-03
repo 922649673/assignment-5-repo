@@ -15,11 +15,11 @@
     <circle cx="100" cy="50" r="40" stroke-width="1" fill="#FFEBCD"></circle>
     
     <!-- Draw moon craters -->
-    <circle cx="80" cy="50" r="10" stroke-width="1" fill="#e5d3b8 "></circle>
-    <circle cx="110" cy="50" r="5" stroke-width="1" fill="#e5d3b8 "></circle>
-    <circle cx="115" cy="30" r="8" stroke-width="1" fill="#e5d3b8 "></circle>
-    <circle cx="110" cy="70" r="11" stroke-width="1" fill="#e5d3b8 "></circle>
-    <circle cx="85" cy="25" r="5" stroke-width="1" fill="#e5d3b8 "></circle>
+    <circle cx="80" cy="50" r="10" stroke-width="1" fill="#e5d3b8"></circle>
+    <circle cx="110" cy="50" r="5" stroke-width="1" fill="#e5d3b8"></circle>
+    <circle cx="115" cy="30" r="8" stroke-width="1" fill="#e5d3b8"></circle>
+    <circle cx="110" cy="70" r="11" stroke-width="1" fill="#e5d3b8"></circle>
+    <circle cx="85" cy="25" r="5" stroke-width="1" fill="#e5d3b8"></circle>
     
     <animateMotion dur="6s" repeatCount="indefinite" path="M 1000,300 a150,150 0 1,0 -300,0"></animateMotion>
   </g>
